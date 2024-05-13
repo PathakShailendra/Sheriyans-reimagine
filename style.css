@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: product sans;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    gap: 10vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 130vh;
+    background-color: #202020;
+}
+
+.cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#card-one {
+    /* M4 */
+    top: 130%;
+    position: absolute;
+    background-image: url(https://i.pinimg.com/originals/9a/a0/79/9aa0794a0c51c4a882637adbdbf14277.jpg);
+}
+
+#card-two {
+    /* Z4 */
+    top: 230%;
+    background-image: url(https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/Z4/10183/1685003672330/front-left-side-47.jpg);
+}
+
+#card-three {
+    /* XM */
+    top: 250%;
+    background-image: url(https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/XM/10570/1689672872537/front-left-side-47.jpg);
+}
+
+#card-four{
+    /* BMW 6 series grand turismo */
+    top: 270%;
+    background-image: url(https://www.bmw-evmautokraft.in/sites/default/files/2021-04/OUR%20MODELS%20Section%201366x450.jpg);
+}
+
+#card-five{
+    /* BMW 3 series Grane limousine */
+    top: 290%;
+    background-image: url(https://www.team-bhp.com/forum/attachments/official-new-car-reviews/2387900d1670479519-bmw-3-series-gran-limousine-review-long-wheelbase-148e847a7599476a9057a2489181e57f.jpeg);
+}
+
+#card-six{
+    /* BMW M340i */
+    top: 310%;
+    background-image: url(https://spn-sta.spinny.com/blog/20230522183738/BMW-M340i-1160x653.webp?compress=true&quality=80&w=1200&dpr=1.5);
+}
+
+#card-seven{
+    /* BMW i7 M70 */
+    top: 330%;
+    background-image: url(https://www.autobics.com/wp-content/uploads/2023/04/2024-BMW-i7-M70-xDrive-Front-Quarter.jpg);
+}
+
+#card-eight{
+    /* BMW ix */
+    top: 350%;
+    background-image: url(https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/iX/11610/1714375959641/front-left-side-47.jpg);
+}
+
+.text{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: red;
+    padding-left: 50px;
+    background-image: url(https://images.unsplash.com/photo-1612545667889-b061512d0dfa?ixlib=rb-4.0.3);
+    background-position: center;
+    background-size: cover;
+}
+
+.text h2{
+    color: #fff;
+    font-size: 40px;
+}
+
+.text h1{
+    display: inline-block;
+    /* border: 2px solid black; */
+    font-size: 120px;
+    color: #fff;
+}
+
+.text button{
+    margin-top: 25px;
+    /* border: 3px solid black; */
+    font-size: 25px;
+    background-color: #1c69d4;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#main .card-text{
+    position: relative;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.card-text h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.card-text h1{
+    display: inline;
+    font-size: 120px;
+    font-weight: 800;
+    background-color: orange;
+    border-radius: 15px;
+    color: black;
+}
+
+.scroller{
+    position: absolute;
+    left: -30%;
+    top: -120%;
+    /* right: 100%; */
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: purple; */
+    z-index: 2;
+}
+
+.text #text{
+    position: relative;
+    animation: effect 10s linear infinite;
+}
+
+@keyframes effect {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#text{
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    transform-origin:0 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#text span{
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    transform-origin:0 100px;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    color: #84d0f8;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-text{
+    height: 90px;
+    width: 160px;
+    position: relative;
+    left: 86%;
+    top: -8%;
+    z-index: 10;
+}
+
+.img-text img{
+    position: relative;
+    left: -18%;
+    top: 48%;
+    height: 100%;
+    width: 100%;
+}
